@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Lifex.AdminPanel.MainPage">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <Frame Grid.Row="0"
+               BackgroundColor="#2196F3"
+               Padding="8"
+               CornerRadius="0">
+            <Label HorizontalTextAlignment="Center" TextColor="White">
+                <Label.FormattedText>
+                    <FormattedString>
+                        <FormattedString.Spans>
+                            <Span Text="Lifex" FontSize="24" FontAttributes="Bold"/>
+                            <Span Text=" - your's everyday expenses statistic" FontSize="24"/>
+                        </FormattedString.Spans>
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+        </Frame>
+
+        <Label Grid.Row="1"
+               Text="Enter command here:"
+               Margin="8,0"/>
+        <Entry Grid.Row="2"
+               Margin="8,0"/>
+
+        <Label Grid.Row="3"
+               Text="Result:"
+               Margin="8,8,8,0"/>
+        <Editor Grid.Row="4"
+                IsReadOnly="True"
+                Margin="8,0,8,8"
+                IsTabStop="False"/>
+        
+    </Grid>
+
+</ContentPage>
